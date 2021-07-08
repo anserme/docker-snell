@@ -49,4 +49,4 @@ RUN apk update \
   && rm -rf glibc.apk glibc-bin.apk /etc/apk/keys/sgerrand.rsa.pub /var/cache/apk/*
 
 COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["sh","docker-entrypoint.sh"]
+ENTRYPOINT ["sh","/usr/local/bin/docker-entrypoint.sh"]
