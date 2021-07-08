@@ -7,6 +7,7 @@ ENV SNELL_VERSION 2.0.4
 RUN apk update \
   && apk add --no-cache \
     unzip \
+    add ca-certificates \
     upx \
   && wget -O snell-server.zip https://github.com/surge-networks/snell/releases/download/v${SNELL_VERSION}/snell-server-v${SNELL_VERSION}-linux-amd64.zip \
   && unzip snell-server.zip \
