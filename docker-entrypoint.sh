@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 launch() {
   if [ -z "$PSK" ]; then
