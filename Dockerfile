@@ -14,7 +14,7 @@ RUN apk update \
   && mv snell-server /usr/local/bin/
 
 
-FROM alpine:3.9
+FROM alpine:3.14
 
 LABEL maintainer="anserme <admin@dreamback.cc>"
 
